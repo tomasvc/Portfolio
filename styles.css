@@ -237,7 +237,7 @@ nav a:hover:not(#nav-selected) {
   position: absolute;
   margin-left: 14.5%;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background: none;
+  background: rgb(23, 23, 23);
 }
 
 #container a {
