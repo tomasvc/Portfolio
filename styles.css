@@ -103,6 +103,9 @@ body {
   z-index: 1;
 }
 
+#nav-icon {
+}
+
 .branding {
   background: #0c0c0c;
   color: white;
@@ -254,7 +257,8 @@ nav a:hover:not(#nav-selected) {
   background: linear-gradient(217deg, rgba(29, 29, 29, 0.8), rgba(87, 4, 4, 0) 70.71%),
   linear-gradient(127deg, rgba(7, 100, 7, 0.8), rgba(1, 105, 1, 0) 70.71%),
   linear-gradient(336deg, rgba(3, 3, 26, 0.8), rgba(14, 14, 56, 0) 70.71%);
-  
+  background-position: center;
+  background-attachment: fixed;
 }
 
 #bg-image {

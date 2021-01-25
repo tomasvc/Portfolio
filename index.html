@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="media-queries.css">
         <script src="all.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Document</title>
     </head>
     <body>
@@ -23,6 +24,11 @@
             <div class="branding">
                 <h3><a href="index.html">Tomas Valevicius</a></h3>
                 <h5><a href="index.html">Developer & Digital Artist</a></h5>
+            </div>
+            <div id="nav-icon">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
             <nav>
                 <a id="nav-selected" href="index.html">Home</a>
@@ -53,6 +59,13 @@
         <script src="projects.js"></script>
         <script>
             init();
+
+            $(document).ready(function(){
+	            $('#nav-icon').click(function(){
+                    $(this).toggleClass('open');
+                    $('nav, .filter, .links, .copyright').css('display', 'block');
+	            });
+            });
         </script>
     </body>
 </html>
