@@ -20,6 +20,7 @@
     #container {
         margin: 0;
         margin-top: 60px;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
