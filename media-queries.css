@@ -4,6 +4,7 @@
         display: block;
         width: 100vw;
         height: auto;
+        border: none;
     }
 
     nav, .filter, .links, .copyright {
