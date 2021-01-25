@@ -90,11 +90,7 @@ select {
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
-  background: url('img/bg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(23, 23, 23);
 }
 
 .navigation {
