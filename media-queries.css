@@ -125,7 +125,15 @@
     }
 
     .description p, .proj-title, .tools {
-        width: 100%;
+        width: 90%;
+    }
+
+    .proj-title {
+        font-size: 0.8em;
+    }
+
+    .tools {
+        padding-bottom: 20px;
     }
 
 }
