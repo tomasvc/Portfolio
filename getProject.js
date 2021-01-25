@@ -21,7 +21,7 @@ const init = (id) => {
     loadJSON((response) => {
         let json = JSON.parse(response);
         let proj = json.projects[id];
-        //str += `<div id='bg-image'><div id='shade'></div></div>`;
+        //str += `<div id='shade'></div>`;
         
         proj.images.forEach(img => str += `<img class='image' src=${img}></img>`);
         str += `<div class='description'>`;

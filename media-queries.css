@@ -23,4 +23,13 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    #project {
+        width: 100%;
+        margin: 0;
+    }
+
+    .image {
+        margin-top: 90px;
+    }
+
 }

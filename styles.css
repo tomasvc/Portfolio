@@ -251,11 +251,10 @@ nav a:hover:not(#nav-selected) {
   width: 85.3%;
   font-family: Roboto, sans-serif;
   margin-left: 14.5%;
-  background: url('img/bg.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: linear-gradient(217deg, rgba(29, 29, 29, 0.8), rgba(87, 4, 4, 0) 70.71%),
+  linear-gradient(127deg, rgba(7, 100, 7, 0.8), rgba(1, 105, 1, 0) 70.71%),
+  linear-gradient(336deg, rgba(3, 3, 26, 0.8), rgba(14, 14, 56, 0) 70.71%);
+  
 }
 
 #bg-image {
@@ -271,14 +270,16 @@ nav a:hover:not(#nav-selected) {
 
 #shade {
   position: absolute;
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   background: rgba(0, 0, 0, 0.603);
+  z-index: 0;
 }
 
 .proj-title {
   color: black;
-  margin-top: 20px;
+  width: 70%;
+  padding-top: 20px;
   margin: auto;
   z-index: 1;
 }
@@ -301,7 +302,7 @@ nav a:hover:not(#nav-selected) {
 
 .image {
   width: 550px;
-  margin: 20px auto 50px auto;
+  margin: 30px auto 30px auto;
   z-index: 1;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
 }
@@ -312,12 +313,13 @@ nav a:hover:not(#nav-selected) {
   margin: auto;
   background: white;
   box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.397);
+  z-index: 1;
 }
 
 .description p {
   width: 70%;
   margin: auto;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 
 .tools {
