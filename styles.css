@@ -329,6 +329,7 @@ nav a:hover:not(#nav-selected) {
 .tools {
   width: 70%;
   margin: auto;
+  padding: 20px 0;
 }
 
 .tools h3 {
@@ -337,6 +338,15 @@ nav a:hover:not(#nav-selected) {
 
 .tools h5 {
   margin: 5px 0;
+}
+
+.tools div {
+  width: 80px;
+  text-align: center;
+}
+
+.tools img {
+  margin: auto;
 }
 
 

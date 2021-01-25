@@ -33,7 +33,7 @@ const init = (id) => {
         str += `<div class='tools'>
                     <h3>Tools used</h3>`
         if (proj.tools == "Photoshop") {
-            str += `<img src='img/photoshop-logo.png' width='50px'></img><h5>Photoshop</h5>`;
+            str += `<div><img src='img/photoshop-logo.png' width='50px'></img><h5>Photoshop</h5></div>`;
         }
         str += `</div></div>`
 
