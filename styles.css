@@ -1,0 +1,349 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #313131;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2b2b2b;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  background: url('img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navigation {
+  position: fixed;
+  font-family: Roboto, sans-serif;
+  height: 100vh;
+  min-width: 14.5%;
+  background: #000000;
+  box-shadow: 5px 0 10px rgba(0, 0, 0, 0.76);
+  z-index: 1;
+}
+
+.branding {
+  background: #0c0c0c;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  border-bottom: 1px solid #ffffff42;
+}
+
+.branding h3 {
+  font-weight: 200;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.branding h5 {
+  font-weight: 400;
+  font-size: 0.57em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.branding h5 a, .branding h3 a {
+  text-decoration: none;
+  color: white;
+}
+
+nav a {
+  display: block;
+  padding: 10px 15px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-align: right;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ffffff42;
+  color: white;
+  transition: 0.2s ease;
+}
+
+nav a:hover:not(#nav-selected) {
+  background:  rgba(88, 88, 28, 0.26);
+  padding-right: 12px;
+}
+
+#nav-selected {
+  background: rgb(190, 190, 29);
+}
+
+.filter {
+  color: white;
+  font-weight: 300;
+  text-align: right;
+  padding: 10px 15px;
+}
+
+.filter ul {
+  margin-top: 8px;
+}
+
+.filter ul li {
+  display: block;
+  width: auto;
+  list-style-type: none;
+  font-size: 0.8em;
+  color: #ffffff83;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+.filter ul li:hover:not(#filter-selected) {
+  color: white;
+}
+
+#filter-selected {
+  color: white;
+}
+
+.links {
+  list-style-type: none;
+  text-align: right;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.links li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 1.2em;
+  transition: 0.2s ease;
+}
+
+.links li i {
+  color: #ffffff83;
+  transition: 0.2s ease;
+}
+
+.links li i:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.fa-github, .fa-instagram, .fa-linkedin-in {
+  color: #ffffff83;
+  transition: 0.2s ease;
+}
+
+.fa-github:hover, .fa-instagram:hover, .fa-linkedin-in:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.copyright {
+  color: #ffffff83;
+  font-size: 0.7em;
+  font-weight: 300;
+  text-align: right;
+  margin: 0;
+  padding: 4px 15px;
+}
+
+
+
+#container {
+  display: grid;
+  position: absolute;
+  margin-left: 14.5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background: none;
+}
+
+#container a {
+  transition: 0.2s ease;
+}
+
+#container a:hover {
+  opacity: 0.8;
+}
+
+
+
+#project, #content {
+  position: absolute;
+  width: 85.3%;
+  font-family: Roboto, sans-serif;
+  margin-left: 14.5%;
+  background: url('img/bg.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#bg-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+#shade {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  background: rgba(0, 0, 0, 0.603);
+}
+
+.proj-title {
+  color: black;
+  margin-top: 20px;
+  margin: auto;
+  z-index: 1;
+}
+
+.proj-name {
+  display: inline-block;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.proj-category {
+  display: inline-block;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px black solid;
+}
+
+.image {
+  width: 550px;
+  margin: 20px auto 50px auto;
+  z-index: 1;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
+}
+
+.description {
+  width: 100%;
+  line-height: 30px;
+  margin: auto;
+  background: white;
+  box-shadow: 0 -1px 15px rgba(0, 0, 0, 0.397);
+}
+
+.description p {
+  width: 70%;
+  margin: auto;
+  padding-top: 20px;
+}
+
+.tools {
+  width: 70%;
+  margin: auto;
+}
+
+.tools h3 {
+  margin: 10px 0;
+}
+
+.tools h5 {
+  margin: 5px 0;
+}
+
+
+
+
+#content p {
+  color: white;
+  margin: 50px;
+  font-size: 2em;
+  font-weight: 300;
+  line-height: 50px;
+}

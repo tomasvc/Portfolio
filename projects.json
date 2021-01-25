@@ -1,0 +1,74 @@
+{
+    "projects": [
+        {
+            "id": 0,
+            "name": "White",
+            "date": "13-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-1.jpg",
+            "images": ["img/p0-1.jpg"],
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit risus eleifend facilisis condimentum. Vestibulum eu pulvinar ante. Duis tincidunt massa volutpat sem congue maximus. Proin dapibus ante eget diam ultricies pulvinar. Nam eros nisi, interdum sed ullamcorper ut, eleifend eu enim. Suspendisse in ipsum sit amet dui iaculis ultrices ac eget mi. Sed aliquet lorem nibh, vulputate pharetra sapien ultrices vitae. Mauris tristique id ipsum ac sodales. Etiam risus mi, scelerisque nec augue et, luctus accumsan libero. Duis id augue nunc. Pellentesque dignissim lectus eleifend, pretium nisi vitae, rutrum tellus. Sed volutpat at magna sit amet hendrerit. Proin nec augue magna.",
+            "tools": "Photoshop"
+        },
+        {
+            "id": 1,
+            "name": "Joker",
+            "date": "13-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-2.jpg",
+            "images": ["img/p1-1.jpg"],
+            "description": "",
+            "tools": "Photoshop"
+        },
+        {
+            "id": 2,
+            "name": "Photo Study",
+            "date": "13-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-3.jpg",
+            "images": ["img/p2-1.jpg", "img/p2-2.jpg"],
+            "description": "",
+            "tools": "Photoshop"
+        },
+        {
+            "id": 3,
+            "name": "Photo Study",
+            "date": "13-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-4.jpg",
+            "images": ["img/p3-1.jpg"],
+            "description": "",
+            "tools": "Photoshop"
+        },
+        {
+            "id": 4,
+            "name": "Smoke",
+            "date": "13-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-5.jpg",
+            "images": ["img/p4-1.jpg"],
+            "description": "",
+            "tools": "Photoshop"
+        },
+        {
+            "id": 5,
+            "name": "Escape Room",
+            "date": "13-01-2021",
+            "category": "Video Game",
+            "thumbnail": "img/project-4.jpg",
+            "images": ["img/p3-1.jpg"],
+            "description": "",
+            "tools": "Unity Engine"
+        },
+        {
+            "id": 6,
+            "name": "Beth Harmon",
+            "date": "23-01-2021",
+            "category": "Artwork",
+            "thumbnail": "img/project-6.jpg",
+            "images": ["img/p5-1.jpg"],
+            "description": "Beth Harmon from The Queen's Gambit.",
+            "tools": "Photoshop"
+        }
+    ]
+}
