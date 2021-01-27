@@ -12,29 +12,23 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="media-queries.css">
         <script src="all.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Document</title>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        
         <div class="navigation">
             <div class="branding">
                 <h3><a href="index.html">Tomas Valevicius</a></h3>
                 <h5><a href="index.html">Developer & Digital Artist</a></h5>
             </div>
-            <div id="nav-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
             <nav>
-                <a id="nav-selected" href="index.html">Home</a>
-                <a href="work.html">Work</a>
-                <a href="about.html">About</a>
-                <a href="contact.html">Contact</a>
+                <a href="index.html">Home</a>
+                <a href="#">Work</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
             </nav>
             <div class="filter">
                 <p>Filter</p>
@@ -53,19 +47,12 @@
             </ul>
             <p class="copyright">&#169 Tomas Valevicius. All rights reserved.</p>
         </div>
-        <div id="container">
+        <div id="project">
+
         </div>
-
-        <script src="projects.js"></script>
+        <script src="getProject.js"></script>
         <script>
-            init();
-
-            $(document).ready(function(){
-	            $('#nav-icon').click(function(){
-                    $(this).toggleClass('open');
-                    $('nav, .filter, .links, .copyright').css('display', 'block');
-	            });
-            });
+            getProject();
         </script>
     </body>
 </html>

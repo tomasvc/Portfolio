@@ -87,6 +87,10 @@ select {
   background: #2b2b2b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -101,9 +105,6 @@ body {
   background: #000000;
   box-shadow: 5px 0 10px rgba(0, 0, 0, 0.76);
   z-index: 1;
-}
-
-#nav-icon {
 }
 
 .branding {
