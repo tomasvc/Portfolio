@@ -240,6 +240,11 @@ nav a:hover:not(#nav-selected) {
   background: rgb(23, 23, 23);
 }
 
+.project {
+  display: inline-block;
+  transition: display 0.2s;
+}
+
 #container a {
   transition: 0.2s ease;
 }
@@ -359,4 +364,77 @@ nav a:hover:not(#nav-selected) {
   font-size: 2em;
   font-weight: 300;
   line-height: 50px;
+}
+
+
+#no-grid {
+  display: block;
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  margin-left: 14.5%;
+  width: 85.3%;
+  background: rgb(23, 23, 23);
+}
+
+form {
+  width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  background: none;
+  outline: none;
+  border: 0.5px solid rgb(199, 199, 199);
+  color: white;
+  padding: 10px;
+  margin-top: 15px;
+  transition: 0.2s ease;
+}
+
+input::placeholder, textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.5px;
+}
+
+input:focus, textarea:focus {
+  border: 0.5px solid yellow;
+}
+
+.submit-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  background: rgb(190, 190, 29);
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+  background: rgb(139, 139, 23);
+}
+
+.alert {
+  position: absolute;
+  width: 100%;
+  margin: auto;
+  color: white;
+  background: rgb(190, 190, 29);
+  padding: 10px;
+  display: none;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.form-head {
+  color: white;
+  text-align: center;
+  margin-top: 10%;
 }

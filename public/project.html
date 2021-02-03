@@ -26,9 +26,9 @@
             </div>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Contact</a>
+                <a href="work.html">Work</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
             </nav>
             <div class="filter">
                 <p>Filter</p>
@@ -50,7 +50,11 @@
         <div id="project">
 
         </div>
-        <script src="getProject.js"></script>
+        <script src="/__/firebase/8.2.5/firebase-app.js"></script>
+        <script src="/__/firebase/8.2.5/firebase-firestore.js"></script>
+        <script src="/__/firebase/init.js"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <script src="/projects.js"></script>
         <script>
             getProject();
         </script>

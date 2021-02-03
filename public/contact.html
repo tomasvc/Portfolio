@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="media-queries.css">
-        <script src="all.js"></script>
+        <script defer src="all.js"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -47,19 +47,22 @@
             </ul>
             <p class="copyright">&#169 Tomas Valevicius. All rights reserved.</p>
         </div>
-        <div id="container">
-            <form action="contact.php" method="post">
-                <label for="name">Name</label>
+        <div id="no-grid">
+            <div class="alert">Your message has been sent, thanks for getting in touch!</div>
+            <h1 class="form-head">Get in touch!</h1>
+            <form id="contactForm">
                 <input type="text" id="name" name="user_name" placeholder="name" required>
-                <label for="email">E-mail</label>
                 <input type="email" id="email" name="user_email" placeholder="email" required>
-                <label for="title">Title</label>
                 <input type="title" id="title" name="email_title" placeholder="title" required>
-                <label for="message">Message</label>
-                <input type="message" id="message" name="user_message" placeholder="message" required>
-                <button type="submit">Send</button>
+                <textarea type="text" id="message" name="user_message" placeholder="message" required></textarea>
+                <button class="submit-btn" type="submit">Send</button>
             </form>
         </div>
-        <script src="" async defer></script>
+        <script src="/__/firebase/8.2.5/firebase-app.js"></script>
+        <script src="/__/firebase/8.2.5/firebase-firestore.js"></script>
+        <script src="/__/firebase/8.2.4/firebase-database.js"></script>
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+        <script defer src="contact.js"></script>
+        <script defer src="mail.js"></script>
     </body>
 </html>

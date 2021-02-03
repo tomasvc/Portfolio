@@ -1,7 +1,7 @@
 function getProject() {
     let projectId = sessionStorage.getItem('projectId')
 
-    init(projectId);
+    get(projectId);
 }
 
 const loadJSON = (callback) => {
@@ -16,7 +16,7 @@ const loadJSON = (callback) => {
     data.send(null)
 }
 
-const init = (id) => {
+const get = (id) => {
     let str = ``;
     loadJSON((response) => {
         let json = JSON.parse(response);
